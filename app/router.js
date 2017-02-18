@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('spec', { path: '/spec/:name' }, function() {
+    this.route('paths');
+    this.route('definitions');
+    this.route('info');
+  });
 });
 
 export default Router;

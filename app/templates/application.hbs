@@ -1,0 +1,14 @@
+<h4>Ember.js Swagger Docs</h4>
+{{app-version hideSha=true}}
+<strong>Available Swagger Specs</strong>
+<ul>
+  {{#each model as |spec|}}
+    <li>
+      {{#link-to "spec.info" spec}}
+        {{spec}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+<hr>
+{{outlet}}

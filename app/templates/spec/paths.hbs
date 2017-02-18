@@ -1,0 +1,8 @@
+<ul>
+  {{#each-in model.spec.paths as |path data|}}
+    <li>
+      {{path-list-item name=path data=data}}
+    </li>
+  {{/each-in}}
+</ul>
+{{outlet}}
