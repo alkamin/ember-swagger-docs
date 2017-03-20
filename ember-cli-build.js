@@ -1,16 +1,16 @@
-/*jshint node:true*/
-/* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+/* eslint-env node */
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
 
-  app.import('bower_components/swagger-parser/dist/swagger-parser.js');
-
   // Use `app.import` to add additional libraries to the generated
   // output files.
+
+  app.import('bower_components/swagger-parser/dist/swagger-parser.js');
+
   //
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That

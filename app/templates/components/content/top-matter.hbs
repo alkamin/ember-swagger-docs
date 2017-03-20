@@ -1,0 +1,6 @@
+{{#each sections as |section|}}
+  {{# operations/operation-container }}
+    {{ operations/operation-detail data=section }}
+    {{ operations/operation-sample data=section }}
+  {{/ operations/operation-container }}
+{{/each}}

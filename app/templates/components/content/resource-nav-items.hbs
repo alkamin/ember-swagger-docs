@@ -1,0 +1,5 @@
+{{# sidebar/sidebar-section title="Core Resources" link="#"}}
+  {{#each resources as |resource| }}
+    {{ content/resource-nav-item resourceName=resource.name spec=spec }}
+  {{/each}}
+{{/ sidebar/sidebar-section }}

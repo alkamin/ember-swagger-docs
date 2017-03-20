@@ -1,0 +1,8 @@
+{{# sidebar/sidebar-expandable-item label=resourceName link="#" }}
+  {{# sidebar/sidebar-section}}
+    {{#each matchingMethods as |method|}}
+      {{sidebar/sidebar-item label=method.summary}}
+    {{/each}}
+  {{/ sidebar/sidebar-section }}
+{{/ sidebar/sidebar-expandable-item}}
+

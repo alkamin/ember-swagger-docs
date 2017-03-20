@@ -1,0 +1,5 @@
+{{# sidebar/sidebar-section}}
+  {{#each topMatter as |section| }}
+    {{ sidebar/sidebar-item label=section.label link="#" isHeading=section.isHeading }}
+  {{/each}}
+{{/ sidebar/sidebar-section}}
